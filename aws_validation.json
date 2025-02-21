@@ -1,0 +1,12 @@
+//this is the MOCK from req4.py
+{
+    "ec2": {
+      "instance_id": "mock-instance-id",
+      "state": "running",
+      "public_ip": "123.45.67.89"
+    },
+    "alb": {
+      "alb_name": "mock-alb-name",
+      "dns_name": "mock-alb-123.elb.amazonaws.com"
+    }
+  }
