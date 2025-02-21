@@ -2,12 +2,10 @@ from jinja2 import Template
 
 ami_options = {
     "1": "ami-0dee1ac7107ae9f8c",
-    "2": "ami-0f1a6835595fb9246"
-}
+    "2": "ami-0f1a6835595fb9246"}
 instance_options = {
     "1": "t3.small",
-    "2": "t3.medium"
-}
+    "2": "t3.medium"}
 #ami
 print("Choose ami: [1] Ubuntu, [2] Amazon Linux ")
 ami_choice = input("Enter your choice: ")
@@ -33,7 +31,7 @@ alb_name = input("Enter a name for ALB: ").strip()
 
 # Template for your choices
 template = Template("""
-Summary:
+User choices:
 --------
 AMI: {{ ami }}
 Instance Type: {{ instance_type }}
